@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ContactList({ filteredArray, onDeleteContact }) {
+export default function ContactList({ filteredArray, onDeleteContact }) {
   return (
     <>
       <ul>
@@ -28,5 +28,3 @@ ContactList.propTypes = {
   ).isRequired,
   onDeleteContact: PropTypes.func.isRequired,
 };
-
-export default ContactList;
